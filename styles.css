@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popins', sans-serif;
+    text-decoration: none;
+}
+
+.header {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 5%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .header {
+        width: 100%;
+        display: block;
+        flex-direction: column;
+        background-color: rgb(252, 200, 152);
+    }
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    color: black;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.logo {
+    position: relative;
+    width: 200px;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(img/hero.jpg) no-repeat;
+    background-size: cover;
+    background-position: top right;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 80px;
+    margin-bottom: 50px;
+    margin-top: -60px;
+}
+
+@media (max-width: 768px) {
+    .home-content h1 {
+        color: white;
+    }
+}
+
+.shopnow-btn {
+    margin-top: 60px;
+    padding: 25px;
+    border: none;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    border: 1px solid black;
+    transition: 0.5s, transform 0.5s;
+
+}
+
+.shopnow-btn:hover {
+    background-color: transparent;
+    color: black;
+    transition: 0.2s;
+    transform: translateY(-10px);
+    transition: 0.5s;
+    border-radius: 0;
+}
+
+.products-section h2 {
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    text-transform: uppercase;
+}
+
+.product-list {
+    display: flex;
+    grid-template-columns: auto auto auto;
+    background-color: black;
+}
+
+.product-list img {
+    width: 100%;
+    opacity: 0.3;
+    object-fit: cover;
+}
+
+.product-list img:hover {
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+
+.product-list div h3 {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    margin: auto;
+    letter-spacing: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .product-list {
+        width: 100%;
+        display: block;
+        flex-direction: column;
+    }
+}
+
+.col- div {
+    justify-content: center;
+}
+
+.prod-shopbtn {
+    align-items: center;
+}
+
+.shop-section {
+    position: relative;
+    width: 100%;
+    justify-content: right;
+    height: 75vh;
+    background: url(img/handsome-tourist-sunglasses-straw-hat-looking-aside-smiling-pleased-exploring-sighsteeing.jpg) no-repeat;
+    background-size: cover;
+    background-position: top left;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.shop-content {
+    max-width: 600px;
+}
+
+.shop-content h1 {
+    font-size: 80px;
+    margin-top: -60px;
+    text-shadow: 0 0 5px white;
+}
+
+@media (max-width: 768px) {
+    .shop-content h1 {
+        color: white;
+        text-shadow: 0 0 5px black;
+    }
+}
+
+.container {
+    padding: 50px;
+    margin-top: -50px;
+}
+
+.shopitem-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.shopitem-list div {
+    transition: 0.5s, transform 0.5s;
+}
+
+.shopitem-list div:hover {
+    transform: translateY(-10px);
+    transition: 0.2s;
+}
+
+.shopitem-list img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.shopitem-list img:hover {
+    border-radius: 25px;
+    transition: 0.5s, transform 0.5s;
+}
+
+.shopitem-list div h2 {
+    letter-spacing: auto;
+}
+
+.shopitem-list-btn {
+    text-align: center;
+}
+
+.add {
+    padding: 13px 20px;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    border: 1px solid black;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.add:hover {
+    border-radius: 0;
+    color: black;
+    background-color: transparent;
+    transition: 0.2s;
+    transition: 0.5s, transform 0.5s;
+}
+
+.contact {
+    background-color: antiquewhite;
+    height: 100vh;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    padding: 13px 20px;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    border: 1px solid black;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    border-radius: 0;
+    color: black;
+    background-color: transparent;
+    transition: 0.2s;
+    transition: 0.5s, transform 0.5s;
+}
+
+.contact-container {
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+#fn {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.footer-sect {
+    background-color: gray;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: grid;
+    grid-gap: 30px;
+    padding: 70px;
+}
+
+.footer1 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: grid;
+    grid-gap: 50px;
+}
+
+.footer1 a {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+}
+
+.footer1 ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer1 p {
+    text-align: justify;
+}
+
+.footer2 {
+    float: right;
+    display: block;
+}
+
+.footer2 table {
+    margin-top: 25px;
+    width: 100%;
+}
+
+.footer2 table td {
+    border-bottom: 0.5px solid black;
+    border-collapse: collapse;
+}
